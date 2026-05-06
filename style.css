@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     font-weight: 400;
+}
+#contian{
+   
+    display: flex;
+    height: 100vh;
+    
+    text-transform: capitalize;
+}
+#cintain-top{
+    background-color:  #e3e8eb;
+    padding: 10px;
+    width: 40%;
+    text-transform: capitalize;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+   
+}
+#top-div-one{
+ 
+    font-size: 15px;
+   
+}
+#top-div-two{
+    font-size: xx-small;
+  
+    display: flex;
+   height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+  
+}
+#top-div-three{
+    display: flex;
+    justify-content: space-around;
+}
+#top-div-three button{
+    border: 1px solid #f263ff;
+    background: transparent;
+    /* color: #6c63ff; */
+    transition: 0.3s;
+    /* border: none; */
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+#top-div-three button:hover{
+    /* background: #fa63ff; */
+    color: white;
+    background: linear-gradient(135deg, #f263ff, #4ea8de);
+}
+#top-div-two h1{
+    cursor: pointer;
+
+}
+i{
+    cursor: pointer;
+}
+#top-div-two h1:hover{
+    color: rgb(115, 29, 122);
+}
+#cintain-down{
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+     width: 100%;
+    height: 100%;
+    overflow-y: auto; /* ده المهم */
+    display: flex;
+    flex-direction: column;
+
+}
+#down-div-one{
+   
+    margin-bottom: 30px;
+    font-size: large;
+    
+    
+}
+#down-div-two{
+  
+   
+    padding: 7px;
+
+}
+#down-div-two input{
+   
+    height: 35px;
+    border: none;
+   padding-left: 3px;
+    font-size: medium;
+    outline: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px rgba(126, 124, 124, 0.979);
+}
+#down-div-two input:focus{
+    box-shadow: 0px 0px 5px 1px rgba(140, 69, 155, 0.979);
+    
+}
+#down-div-two button{
+    height: 35px;
+    width: 93px;
+    cursor: pointer;
+    border: none;
+    
+    outline: none;
+   background-image: linear-gradient(to top right   , rgb(218, 116, 201),rgb(145, 15, 231));
+    border-radius: 4px;
+    color: white;
+}
+#down-div-three{
+    text-align: end;  
+    padding: 5px;
+}
+#down-div-three h4{
+    margin-right: 20px;
+}
+#down-div-four{
+    background-color:rgb(243, 243, 243) ;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 10px;
+    box-shadow: 1px 1px 5px 3px rgba(126, 124, 124, 0.979);
+    
+  
+}
+#down-div-four > div{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 10px;
+    text-transform: capitalize;
+  
+
+    
+
+
+}
+#down-div-four > div > div > input{
+    margin-right:10px ;
+    font-size: x-large;
+    accent-color: rgb(229, 7, 236);
+    min-width: 30px;
+    height: 30px;
+    border-radius: 300px;
+    
+
+}
+#down-div-four > div > div h3{
+ 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* عدد السطور */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: small;
+     overflow-wrap: break-word;
+    word-break: break-word;
+}
+   
+
+
+
+#down-div-four > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+ 
+#down-div-four > div h3{
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+   
+    
+}
+#down-div-five{
+   
+   
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+
+}
+
+
+
+
+
+
+/* 🌞 Light Mode (الافتراضي) */
+.light-mode {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.light-mode #cintain-top {
+    background-color: #e3e8eb;
+}
+
+.light-mode #down-div-four {
+    background-color: rgb(243, 243, 243);
+}
+
+.light-mode #down-div-four > div {
+    background-color: white;
+}
+
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+.dark-mode #cintain-top {
+    background-color: #2f2f4a;
+}
+
+.dark-mode #cintain-down {
+    background-color: #1e1e2f;
+}
+
+.dark-mode #down-div-four {
+    background-color: #2a2a40;
+}
+
+.dark-mode #down-div-four > div {
+    background-color: #3a3a55;
+    color: #fff;
+}
+
+.dark-mode input {
+    background-color: #2f2f4a;
+    color: #fff;
+}
+
+.dark-mode input::placeholder {
+    color: #ccc;
+}
+
+
+.dark-mode button {
+    color:white;
+}
+@media screen and (max-width:900px) and (min-width:70px){
+    #down-div-two > div{
+        
+       
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 5px;
+       
+        
+      
+        
+        
+    }
+    #down-div-two > div :is(input,button){
+        width: 100%;
+        margin-right: 0;
+    }
+    #top-div-three{
+        display: flex;
+        justify-content: space-around;
+        /* background-color: red; */
+        gap: 10px;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    #top-div-three button{
+        width: 100%;
+    }
+
+
+}
+
+
+@media screen and (max-width:666px){
+    #contian{
+   
+    display: grid;
+    height: fit-content;
+    grid-template-columns: repeat(1,1fr);
+   
+    text-transform: capitalize;
+    }
+    #cintain-top{
+    background-color:  #e3e8eb;
+    padding: 10px;
+    height: fit-content;
+    
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    
+    
+   
+    }
+    #top-div-one{
+ 
+    font-size: 15px;
+   
+    text-align: center;
+   
+}
+#top-div-two{
+    font-size: xx-small;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,125px));
+    justify-content: center;
+    align-items: start;
+    /* gap: 10px; */
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+  
+   
+  
+}
+#top-div-two h1{
+    
+    text-align: center;
+    margin: 10px 5px;
+    
+}
+#top-div-three{
+    display: flex;
+    justify-content: space-around;
+}
+#top-div-three button{
+    border: 1px solid #f263ff;
+    background: transparent;
+    /* color: #6c63ff; */
+    transition: 0.3s;
+    /* border: none; */
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+#down-div-one{
+   
+    margin-bottom: 10px;
+    font-size: medium;
+    text-align: center;
+    /* background-color: red; */
+    
+    
+}
+    
+
+    
+}
+
+
+
